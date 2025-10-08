@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    System.out.println("Enter a color: ");
+	    String color = sc.nextLine().toLowerCase();
+	    switch(color){
+	        case "red":
+	            System.out.println("RED stop the vehicle");
+	            break;
+	            case "yellow":
+	                System.out.println("YELLOW Get ready");
+	                break;
+	                case "green":
+	                    System.out.println("GREEN go!");
+	                    break;
+	                    default:
+	                    System.out.println("Enter a valid color");
+	                    break;
+	    }
+	}
+}

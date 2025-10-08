@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+     Scanner sc = new Scanner (System.in);
+    System.out.println("Enter your Experience :");
+     int exp = sc.nextInt();
+    System.out.println("Enter your Salary :");
+     int salary = sc.nextInt();
+     double bonus ;
+     if (exp > 5){
+         bonus = salary * 0.15;
+     }
+     else if (exp >= 3){
+        bonus = salary *0.10;  
+    }
+    else {
+        bonus = salary * 0.5;
+    }
+    double totalSal=salary + bonus;
+    System.out.println(" Total Salary : " + totalSal);
+}
+}

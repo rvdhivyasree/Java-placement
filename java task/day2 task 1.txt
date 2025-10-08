@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+     Scanner sc = new Scanner (System.in);
+     System.out.println("Enter your Unit :");
+     int unit = sc.nextInt();
+     int bill = 0;
+     if (unit <= 100){
+         bill = unit*5;
+     }
+     else if(unit <= 300){
+         bill = unit*7;
+     }
+     else {
+         bill = unit*10;
+    
+    }
+    if (bill>=2000){
+        double surcharge = bill*0.10;
+        bill+=surcharge;
+    }
+    System.out.println("Bill : " + bill);
+}
+}
